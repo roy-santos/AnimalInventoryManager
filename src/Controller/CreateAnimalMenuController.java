@@ -1,5 +1,7 @@
 package Controller;
 
+import Model.DataProvider;
+import Model.Dog;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -52,7 +54,28 @@ public class CreateAnimalMenuController implements Initializable {
     }
 
     @FXML
-    void onActionSaveAnimal(ActionEvent event) {
+    void onActionSaveAnimal(ActionEvent event) throws IOException {
+
+        int id = Integer.parseInt(animalIdTxt.getText());
+        String breed = breedTxt.getText();
+        int lifespan = Integer.parseInt(lifespanTxt.getText());
+        String behavior = behaviorTxt.getText();
+        double price = Double.parseDouble(priceTxt.getText());
+        boolean isVaccinated;
+        String special = null;
+
+        if(vaccYesRBtn.isSelected()) {
+            isVaccinated = true;
+        } else {
+            isVaccinated = false;
+        }
+
+        DataProvider.addAnimal(new Dog(id, breed, lifespan, behavior, price, isVaccinated, special));
+
+        stage = (Stage)((Button)event.getSource()).getScene().getWindow();
+        scene = FXMLLoader.load(getClass().getResource("/view/MainMenu.fxml"));
+        stage.setScene(new Scene(scene));
+        stage.show();
 
     }
 

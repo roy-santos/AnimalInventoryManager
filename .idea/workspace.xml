@@ -3,14 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RSJavaFXMLApplication/Controller/DisplayAnimalsNameController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RSJavaFXMLApplication/Controller/MainMenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RSJavaFXMLApplication/Controller/MainMenuController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AnimalDetailsMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AnimalDetailsMenuController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/CreateAnimalMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CreateAnimalMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/DisplayAnimalsNameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DisplayAnimalsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/MainMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MainMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RSJavaFXMLApplicationMain/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RSJavaFXMLApplicationMain/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/DisplayAnimalsMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/DisplayAnimalsMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/DisplayAnimalsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DisplayAnimalsController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,30 +240,30 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="266" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1576360690971" />
-    <state width="914" height="200" key="GridCell.Tab.0.bottom" timestamp="1576821073244">
+    <state width="960" height="198" key="GridCell.Tab.0.bottom" timestamp="1576967916271">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="914" height="200" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1576821073244" />
-    <state width="914" height="200" key="GridCell.Tab.0.center" timestamp="1576821073244">
+    <state width="960" height="198" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1576967916271" />
+    <state width="960" height="198" key="GridCell.Tab.0.center" timestamp="1576967916271">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="914" height="200" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1576821073244" />
-    <state width="914" height="200" key="GridCell.Tab.0.left" timestamp="1576821073244">
+    <state width="960" height="198" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1576967916271" />
+    <state width="960" height="198" key="GridCell.Tab.0.left" timestamp="1576967916271">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="914" height="200" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1576821073244" />
-    <state width="914" height="200" key="GridCell.Tab.0.right" timestamp="1576821073244">
+    <state width="960" height="198" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1576967916271" />
+    <state width="960" height="198" key="GridCell.Tab.0.right" timestamp="1576967916271">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="914" height="200" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1576821073244" />
+    <state width="960" height="198" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1576967916271" />
     <state x="555" y="164" width="774" height="857" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1576364820635">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="555" y="164" width="774" height="857" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1576364820635" />
-    <state x="930" y="348" key="com.intellij.ide.util.TipDialog" timestamp="1576808467380">
+    <state x="930" y="348" key="com.intellij.ide.util.TipDialog" timestamp="1576822161150">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="930" y="348" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1576808467380" />
+    <state x="930" y="348" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1576822161150" />
     <state x="1053" y="100" width="774" height="857" key="git4idea.log.GitShowExternalLogAction" timestamp="1576360731627">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

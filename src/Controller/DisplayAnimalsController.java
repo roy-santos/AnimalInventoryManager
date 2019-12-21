@@ -2,6 +2,7 @@ package Controller;
 
 import Model.Animal;
 import Model.DataProvider;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -58,6 +59,16 @@ public class DisplayAnimalsController implements Initializable {
 
     }
 
+    public boolean search(int id) {
+
+        for(Animal dog: DataProvider.getAllAnimals()) {
+            if (dog.getId() == id) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // Set table view
@@ -68,6 +79,12 @@ public class DisplayAnimalsController implements Initializable {
         breedCol.setCellValueFactory(new PropertyValueFactory<>("breed"));
         lifespanCol.setCellValueFactory(new PropertyValueFactory<>("lifespan"));
         priceCol.setCellValueFactory(new PropertyValueFactory<>("price"));
+
+        if(search(14)) {
+            System.out.println("Match!");
+        } else {
+            System.out.println("No Match!");
+        }
     }
 
 }
