@@ -7,6 +7,8 @@ public class DataProvider {
 
     private static ObservableList<Animal> allAnimals = FXCollections.observableArrayList();
 
+    private static ObservableList<Animal> filteredAnimals = FXCollections.observableArrayList();
+
     public static void addAnimal(Animal animal) {
 
         allAnimals.add(animal);
@@ -19,4 +21,7 @@ public class DataProvider {
 
     }
 
+    public static ObservableList<Animal> getFilteredAnimals() {
+        return filteredAnimals;
+    }
 }

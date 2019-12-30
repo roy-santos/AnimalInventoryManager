@@ -96,6 +96,35 @@ public class DisplayAnimalsController implements Initializable {
         return false;
     }
 
+    public Animal selectAnimal(int id) {
+
+        for(Animal dog : DataProvider.getAllAnimals()) {
+            if(dog.getId() == id) {
+                return dog;
+            }
+        }
+        return null;
+    }
+
+    public ObservableList<Animal> filter(String breed) {
+
+        if(!(DataProvider.getFilteredAnimals().isEmpty())) {
+            DataProvider.getFilteredAnimals().clear();
+        }
+
+        for(Animal dog : DataProvider.getAllAnimals()) {
+            if(dog.getBreed().contains(breed)) {
+                DataProvider.getFilteredAnimals().add(dog);
+            }
+        }
+
+        if(DataProvider.getFilteredAnimals().isEmpty()) {
+            return DataProvider.getAllAnimals();
+        }
+
+        return DataProvider.getFilteredAnimals();
+    }
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // Set table view
@@ -107,6 +136,8 @@ public class DisplayAnimalsController implements Initializable {
         lifespanCol.setCellValueFactory(new PropertyValueFactory<>("lifespan"));
         priceCol.setCellValueFactory(new PropertyValueFactory<>("price"));
 
+        animalTableView.setItems(filter("XAl"));
+
         /*
         if(search(14)) {
             System.out.println("Match!");
@@ -114,19 +145,20 @@ public class DisplayAnimalsController implements Initializable {
             System.out.println("No Match!");
         }
 
-
         if(update(66, new Dog(5, "German Shepard", 13, "Alert", 1599.99, true, "Drools"))) {
             System.out.println("Update successful!");
         } else {
             System.out.println("Update failed!");
         }
-         */
 
         if(delete(3)) {
             System.out.println("Delete successful!");
         } else {
             System.out.println("Delete failed!");
         }
+        */
+
+        // animalTableView.getSelectionModel().select(selectAnimal(6));
     }
 
 }
