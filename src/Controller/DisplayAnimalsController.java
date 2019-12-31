@@ -44,8 +44,16 @@ public class DisplayAnimalsController implements Initializable {
     @FXML
     void onActionDisplayAnimalDetailsMenu(ActionEvent event) throws IOException {
 
+        // Specify which view to load using FXMLLoader
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("/View/AnimalDetailsMenu.fxml"));
+        loader.load();
+
+        AnimalDetailsMenuController ADMController = loader.getController();
+        ADMController.sendAnimal(animalTableView.getSelectionModel().getSelectedItem());
+
         stage = (Stage)((Button)event.getSource()).getScene().getWindow();
-        scene = FXMLLoader.load(getClass().getResource("/view/AnimalDetailsMenu.fxml"));
+        Parent scene = loader.getRoot();
         stage.setScene(new Scene(scene));
         stage.show();
 
