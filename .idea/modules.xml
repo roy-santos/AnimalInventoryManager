@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/RSJavaFXMLApplication.iml" filepath="$PROJECT_DIR$/RSJavaFXMLApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AnimalInventoryManager.iml" filepath="$PROJECT_DIR$/AnimalInventoryManager.iml" />
     </modules>
   </component>
 </project>

@@ -1,4 +1,4 @@
-package RSJavaFXMLApplicationMain;
+package AnimalInventoryManager;
 
 import Model.DataProvider;
 import Model.Dog;
@@ -13,7 +13,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("../View/MainMenu.fxml"));
-        primaryStage.setTitle("Hello World");
+        primaryStage.setTitle("Animal Inventory Manager");
         primaryStage.setScene(new Scene(root, 320, 200));
         primaryStage.show();
     }
